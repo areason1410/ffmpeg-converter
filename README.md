@@ -4,11 +4,20 @@
 
 ## Installing
 
-To get this working on your system you need to place the shell file in the home directory, to do this run the command: 
+First you need to clone the file. To do this type this command in your terminal:
+
+> git clone https://github.com/areason1410/ffmpeg-converter.git
+
+To get this working on your system you need to place the shell file in the home directory, to do this go to the _ffmpeg-converter_ directory and run the command: 
 
 > mv reno_ffmpeg.sh ~
 
-then in your .bashrc file you add an alias at your alias list (you can call the alias anything you want but for simplicity keep it short):
+You can now go back to your home directory and run the command:
+
+> rm -R ffmpeg-converter 
+
+
+then in your .bashrc (or .zshrc) file you add an alias at your alias list (you can call the alias anything you want but for simplicity keep it short):
 
 > alias ff='bash ~/reno_ffmpeg.sh'
 
